@@ -1,0 +1,118 @@
+/*
+/* display */
+.container {
+    display: grid | inline-grid;
+  }
+
+/* grid-template-columns // grid-template-rows */
+
+.container {
+    grid-template-columns:  ... |   ...;
+    grid-template-rows:  ... |   ...;
+  }
+
+  .container {
+    grid-template-columns: 40px 50px auto 50px 40px;
+    grid-template-rows: 25% 100px auto;
+  }
+
+  .container {
+    grid-template-columns: [first] 40px [line2] 50px [line3] auto [col4-start] 50px [five] 40px [end];
+    grid-template-rows: [row1-start] 25% [row1-end] 100px [third-line] auto [last-line];
+  }
+
+  container {
+    grid-template-columns: [first] 40px [line2] 50px [line3] auto [col4-start] 50px [five] 40px [end];
+    grid-template-rows: [row1-start] 25% [row1-end] 100px [third-line] auto [last-line];
+  }
+
+  .container {
+    grid-template-rows: [row1-start] 25% [row1-end row2-start] 25% [row2-end];
+  }
+
+  container {
+    grid-template-columns: repeat(3, 20px [col-start]);
+  }
+
+  .container {
+    grid-template-columns: 20px [col-start] 20px [col-start] 20px [col-start];
+  }
+
+  .item {
+    grid-column-start: col-start 2;
+  }
+/* 
+    grid-column-start
+    grid-column-end
+    grid-row-start
+    grid-row-end
+*/
+.item {
+    grid-column-start: <number> | <name> | span <number> | span <name> | auto;
+    grid-column-end: <number> | <name> | span <number> | span <name> | auto;
+    grid-row-start: <number> | <name> | span <number> | span <name> | auto;
+    grid-row-end: <number> | <name> | span <number> | span <name> | auto;
+  }
+.item-a {
+    grid-column-start: 2;
+    grid-column-end: five;
+    grid-row-start: row1-start;
+    grid-row-end: 3;
+  }
+.item-b {
+    grid-column-start: 1;
+    grid-column-end: span col4-start;
+    grid-row-start: 2;
+    grid-row-end: span 2;
+  }
+
+/* grid-column // grid-row */
+
+  .item_2 {
+    grid-column: <start-line> / <end-line> | <start-line> / span <value>;
+    grid-row: <start-line> / <end-line> | <start-line> / span <value>;
+  }
+  .item-c {
+    grid-column: 3 / span 2;
+    grid-row: third-line / 4;
+  }
+
+/* grid-area */
+  
+.item_3 {
+    grid-area: <name> | <row-start> / <column-start> / <row-end> / <column-end>;
+  }
+  .item-d {
+    grid-area: header;
+  }
+  .item-d_2 {
+    grid-area: 1 / col4-start / last-line / 6;
+  }
+
+*/
+
+/*
+  Grid Template Areas
+*/
+  .item-a {
+    grid-area: header;
+  }
+  .item-b {
+    grid-area: main;
+  }
+  .item-c {
+    grid-area: sidebar;
+  }
+  .item-d {
+    grid-area: footer;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "header header header header"
+      "main main . sidebar"
+      "footer footer footer footer";
+  }

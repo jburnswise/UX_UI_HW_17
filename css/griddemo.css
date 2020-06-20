@@ -1,0 +1,40 @@
+.item-a {
+    grid-area: header;
+    background-color: orange;
+    height: 100px;
+  }
+  .item-b {
+    grid-area: main;
+    background-color: blue;
+    
+
+  }
+  .item-c {
+    grid-area: sidebar;
+    background-color: pink;
+  }
+  .item-d {
+    grid-area: footer;
+    background-color: green;
+  }
+  .item-e {
+    grid-area: bonus;
+    background-color: red;
+    padding: 20px;
+  }
+  .item-f {
+    grid-area: footer2;
+    background-color: green;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 16% 16% 16% 16% 16% 16%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "header header header header header header"
+      "sidebar sidebar sidebar . main main"
+      ". . footer footer footer footer"
+      "bonus bonus bonus . . ."
+      ". . . . . ."
+      "footer2 footer2 footer2 footer2 footer2 footer2";
+  }

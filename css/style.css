@@ -62,7 +62,7 @@ header { border: 0px black solid;}
 .logo {
     width: 25%;
     padding: 1%;
-    /*background-color: hotpink;*/
+    background-color: hotpink;*/
 }
 .center {
     width: 50%;
@@ -73,7 +73,7 @@ header { border: 0px black solid;}
 nav {
     width: 73%;
     padding: 1%;
-    /*background-color: aqua;*/
+    background-color: aqua;*/
 }
 nav a:hover{
     color: rgb(126, 126, 126);
@@ -120,7 +120,7 @@ ul {
     width: 800px;
     justify-content: left;
     padding-left: 50px;
-    padding-top: ;
+    /*padding-top: ;*/
 }
 button {
     background-color: white;
@@ -176,7 +176,7 @@ button:active {
     width: 800px;
     justify-content: left;
     padding-left: 50px;
-    padding-top: ;
+    /*padding-top: ;*/
   }
 footer {
     background-color: #1B1B1B;
@@ -213,6 +213,73 @@ footer li {
     color: rgb(126, 126, 126);
 }
 
+.gridTest {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "dOne dOne dOne dOne dOne dOne"
+    "dTwo dTwo dFive dFive dFive Five"
+    "dThree dThree dFive dFive dFour dFour"
+    "dFive dFive dFive dFive dTwo dOne"
+    ;
+    height: 600px;
+    /*background-color: aqua;*/
+    border: blueviolet;
+    padding: 10px;
+}
+.dOne {
+    grid-area: dOne;
+    background-color: pink;
+}
+.dTwo {
+    grid-area: dTwo;
+    background-color: powderblue;
+}
+.dThree {
+    grid-area: dThree;
+    background-color: rebeccapurple;
+}
+.dFour {
+    grid-area: dFour;
+    background-color: red;
+}
+.dFive {
+    grid-area: dFive;
+    background-color: white;
+}
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: footer; font-size: 14px;}
+
+.item2 img {
+    width: 100%;
+    height: auto;
+  }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+  'header header header header header header'
+  'menu main main main right right'
+  'menu footer footer footer footer footer';
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+.pad{
+    margin-left: 50px;
+    margin-right: 50px;
+}
 /*
 button {
     color: black;

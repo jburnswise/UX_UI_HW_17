@@ -114,18 +114,17 @@ font-family: 'Oswald', sans-serif;
 .logo {
     width: 25%;
     padding: 1%;
-    /*background-color: hotpink;*/
+    background-color: hotpink;
 }
 .center {
-    width: 50%;
+    width: 20%;
     padding: 1%;
     background-color: green;
-    
 }
 nav {
-    width: 73%;
+    width: 43%;
     padding: 1%;
-    /*background-color: aqua;*/
+    background-color: aqua;
 }
 nav a:hover{
     color: rgb(126, 126, 126);
@@ -336,11 +335,11 @@ button:active {
   .p1-headpad {
       grid-area: headpad;
       height: 50px;
-      background-color: slategray;
+      /*background-color: slategray;*/
   }
   .p1-item-a {
     grid-area: header;
-    background-color: orange;
+    /*background-color: orange;*/
     font-size:56px;
     
     /*font-size: 60px;
@@ -353,7 +352,7 @@ button:active {
   }
   .p1-item-b {
     grid-area: main;
-    background-color: blue;
+    /*background-color: blue;*/
     /*justify-self: center;*/
     z-index: 10;
   }
@@ -362,7 +361,7 @@ button:active {
 }
   .p1-item-c {
     grid-area: sidebar;
-    background-color: pink;
+    /*background-color: pink;*/
     font-size:33px;
     font-family: 'Oswald', sans-serif;
     /*
@@ -373,21 +372,21 @@ button:active {
   }
   .p1-item-d {
     grid-area: footer;
-    background-color: green;
+    /*background-color: green;*/
   }
   .p1-item-e {
     grid-area: bonus;
-    background-color: red;
+    /*background-color: red;*/
     padding: 20px;
   }
   .p1-item-f {
     grid-area: footer2;
-    background-color: green;
+    /*background-color: green;*/
   }
   .p1-footpad {
     grid-area: footpad;
     height: 50px;
-    background-color: slategray;
+    /*background-color: slategray;*/
   }
   .p1-container {
     padding-left: 50px;
@@ -403,18 +402,18 @@ button:active {
       /*". . footer footer footer footer"*/
       "bonus bonus bonus main main main"
       "footpad footpad footpad footpad footpad footpad";
-      background-color: saddlebrown;
+      background-color: rgb(255, 255, 255);
   }
 
     /*panel 2*/
     .p2-headpad {
         grid-area: headpad_2;
         height: 50px;
-        background-color: slategray;
+        /*background-color: slategray;*/
     }
     .p2-descript-a {
         grid-area: descript_2;
-        background-color: rgb(0, 206, 69);
+        /*background-color: rgb(0, 206, 69);*/
         font-size: 30px;
         font-family: Arial, Helvetica, sans-serif;
         /*width: 800px;*/
@@ -424,7 +423,7 @@ button:active {
       }
     .p2-item-a {
       grid-area: header_2;
-      background-color: orange;
+      /*background-color: orange;
       
       font-size: 60px;
       font-family: Arial, Helvetica, sans-serif;
@@ -447,7 +446,7 @@ button:active {
       
     .p2-item-c {
       grid-area: sidebar_2;
-      background-color: pink;
+      /*background-color: pink;*/
       font-size: 30px;
       font-family: Arial, Helvetica, sans-serif;
       justify-content: left;
@@ -455,21 +454,21 @@ button:active {
     }
     .p2-item-d {
       grid-area: footer_2;
-      background-color: green;
+      /*background-color: green;*/
     }
     .p2-item-e {
       grid-area: bonus_2;
-      background-color: red;
+      /*background-color: red;*/
       padding: 20px;
     }
     .p2-item-f {
       grid-area: footer_2;
-      background-color: green;
+      /*background-color: green;*/
     }
     .p2-footpad {
       grid-area: footpad_2;
       height: 50px;
-      background-color: slategray;
+      /*background-color: slategray;*/
     }
     .p2-container {
       padding-left: 50px;
@@ -529,14 +528,15 @@ button:active {
       width: 100%;
     }
     .p3-item-c {
-      grid-area: sidebar_3;
+      border: 1px solid rgb(255, 0, 0);
       color: white;
+      grid-area: sidebar_3;
       /*background-color: pink;*/
       /*font-size: 30px;
       font-family: Arial, Helvetica, sans-serif;
       color: white;
       justify-content: left;*/
-      border-top: 1px solid white;
+      border-top: 1px solid rgb(255, 255, 255);
     }
     .p3-item-d {
       grid-area: footer_3;
@@ -750,4 +750,114 @@ footer li {
     display: inline-block;
     vertical-align: top;
     text-decoration: none;
+}
+
+/*Nav Panel 1*/
+.n1-headpad {
+  grid-area: headpad_n;
+  height: 20px;
+  background-color: slategray;
+}
+.n1-item-a {
+grid-area: header_n;
+/*background-color: orange;*/
+background-color: tomato;
+vertical-align: top;
+
+/*font-size: 60px;
+font-family: Arial, Helvetica, sans-serif;
+
+justify-content: left;
+/*padding-left: 50px;*/
+/*padding-top: ;*/
+/*height: 100px;*/
+}
+.n1-item-b {
+grid-area: main_n;
+background-color: teal;
+/*background-color: blue;*/
+/*justify-self: center;*/
+}
+.n1-item-b img{
+width: 100%;
+}
+.n1-item-c {
+grid-area: sidebar_n;
+background-color: pink;
+justify-content: space-evenly;
+/*font-size:33px;
+font-family: 'Oswald', sans-serif;*/
+/*
+font-size: 30px;
+font-family: Arial, Helvetica, sans-serif;
+justify-content: left;
+*/
+}
+.n1-item-d {
+grid-area: footer_n;
+/*background-color: green;*/
+}
+.n1-item-e {
+grid-area: bonus_n;
+/*background-color: red;*/
+padding: 20px;
+background-color: turquoise;
+}
+.n1-item-f {
+grid-area: footer2_n;
+/*background-color: green;*/
+}
+.n1-footpad {
+grid-area: footpad_n;
+height: 20px;
+background-color: rgb(0, 90, 180);*/
+}
+.n1-container {
+padding-left: 50px;
+padding-right: 50px;
+display: grid;
+grid-template-columns: 16% 16% 16% 16% 16% 16%;
+grid-template-rows: auto;
+column-gap: 10px;
+grid-template-areas: 
+  "headpad_n headpad_n headpad_n headpad_n headpad_n headpad_n"
+  "header_n header_n main_n sidebar_n sidebar_n sidebar_n"
+  "footpad_n footpad_n footpad_n footpad_n footpad_n footpad_n"
+  ;
+  background-color: rgb(255, 255, 255);
+  border-bottom: 1px solid black;
+}
+
+
+
+
+.inline-block {
+  display: inline-block;
+  vertical-align: top;
+}
+.inline-block a{
+  color: black;
+  display: inline-block;
+  vertical-align: top;
+  text-decoration: none;
+}
+
+.logo {
+  width: 25%;
+  padding: 1%;
+  background-color: hotpink;
+}
+.center {
+  width: 20%;
+  padding: 1%;
+  background-color: green;
+}
+.n1-item-c a:hover{
+  color: rgb(126, 126, 126);
+  /*background-color: aqua;*/
+}
+
+ul {
+  width: 50%;
+  margin-left: auto;
 }

@@ -436,7 +436,7 @@ button:active {
     }
     .p2-item-b {
       grid-area: main_2;
-      background-color: blue;*/
+      /*background-color: blue;*/
       justify-self: center;
       /*object-fit: contain;*/
       z-index: 10;

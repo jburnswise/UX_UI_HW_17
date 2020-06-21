@@ -2,18 +2,20 @@
 body { 
     margin: 0px; 
     font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    /*max-width: 2000px;*/
 }
 header { border: 0px black solid;}
 
 
 h1 {
-    font-size:56px;
+    font-size: 3em;
     font-family: 'Open Sans', sans-serif;
     /*font-family: 'Oswald', sans-serif;*/
     } 
     
 h2 {
-    font-size:33px;
+    font-size: 1.5em;
     font-family: 'Open Sans', sans-serif;
     /*font-family: 'Oswald', sans-serif;*/
 } 
@@ -235,9 +237,12 @@ footer {
 
 .footerUl {
     color: #ffffff;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
     vertical-align: top;
     width: 100%;
+    margin: 0;
+    padding: 0;
     /*margin-left: auto;
     text-align: center;
     padding: 1%;*/
@@ -442,6 +447,7 @@ button:active {
     }
     .p2-item-b img{
         width: 100%;
+        max-width: 40rem;
     }
       
     .p2-item-c {
@@ -527,9 +533,10 @@ button:active {
     .p3-item-b img{
       width: 100%;
     }
+
     .p3-item-c {
-      border: 1px solid rgb(255, 0, 0);
-      color: white;
+      /*border: 1px solid rgb(255, 0, 0);*/
+      color: white !important;
       grid-area: sidebar_3;
       /*background-color: pink;*/
       /*font-size: 30px;

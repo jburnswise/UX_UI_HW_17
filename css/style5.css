@@ -883,3 +883,19 @@ ul {
   background-color: blueviolet;
   justify-content: center;
 }
+.p3-item-a a {
+  color: white;
+  text-decoration: none;
+}
+.p3-item-a a:hover {
+  color: grey;
+  text-decoration: none;
+}
+.p2-item-a a {
+  color: black;
+  text-decoration: none;
+}
+.p2-item-a a:hover {
+  color: grey;
+  text-decoration: none;
+}

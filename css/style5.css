@@ -250,6 +250,7 @@ footer {
 footer li {
     font-family: iconsFilled;
     /*padding-top: 20px;*/
+    padding-top: 20px;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -259,8 +260,9 @@ footer li {
     padding-top: 5px;
     padding-bottom: 30px;
 }
+
 .ss-icon {
-    font-size: 40px;
+    font-size: 30px;
     color: rgb(255, 255, 255);
 }
 
@@ -447,7 +449,7 @@ button:active {
     }
     .p2-item-b img{
         width: 100%;
-        max-width: 40rem;
+        max-width: 50rem;
     }
       
     .p2-item-c {
@@ -532,6 +534,7 @@ button:active {
     }
     .p3-item-b img{
       width: 100%;
+      max-width: 50rem;
     }
 
     .p3-item-c {
@@ -762,13 +765,13 @@ footer li {
 /*Nav Panel 1*/
 .n1-headpad {
   grid-area: headpad_n;
-  height: 20px;
-  background-color: slategray;
+  height: 10px;
+  /*background-color: slategray;*/
 }
 .n1-item-a {
 grid-area: header_n;
 /*background-color: orange;*/
-background-color: tomato;
+/*background-color: tomato;*/
 vertical-align: top;
 
 /*font-size: 60px;
@@ -779,9 +782,14 @@ justify-content: left;
 /*padding-top: ;*/
 /*height: 100px;*/
 }
+.n1-item-a p {
+  /*
+  color: rgb(255, 0, 221);
+  */
+}
 .n1-item-b {
 grid-area: main_n;
-background-color: teal;
+/*background-color: teal;*/
 /*background-color: blue;*/
 /*justify-self: center;*/
 }
@@ -790,7 +798,7 @@ width: 100%;
 }
 .n1-item-c {
 grid-area: sidebar_n;
-background-color: pink;
+/*background-color: pink;*/
 justify-content: space-evenly;
 /*font-size:33px;
 font-family: 'Oswald', sans-serif;*/
@@ -816,8 +824,8 @@ grid-area: footer2_n;
 }
 .n1-footpad {
 grid-area: footpad_n;
-height: 20px;
-background-color: rgb(0, 90, 180);*/
+height: 5px;
+/*background-color: rgb(0, 90, 180);*/
 }
 .n1-container {
 padding-left: 50px;
@@ -847,6 +855,7 @@ grid-template-areas:
   display: inline-block;
   vertical-align: top;
   text-decoration: none;
+  padding-left: 10px;
 }
 
 .logo {

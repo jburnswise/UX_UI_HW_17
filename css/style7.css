@@ -262,8 +262,9 @@ footer li {
 }
 
 .ss-icon {
-    font-size: 30px;
-    color: rgb(255, 255, 255);
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.7);
+    
 }
 
 .ss-icon:hover {
@@ -361,7 +362,11 @@ button:active {
     grid-area: main;
     /*background-color: blue;*/
     /*justify-self: center;*/
+    width: 100%;
+    max-width: 20rem;
     transform-style: preserve-3d
+    
+
     /*
     z-index: 10;
     */
@@ -407,7 +412,7 @@ button:active {
     column-gap: 10px;
     grid-template-areas: 
       "headpad headpad headpad headpad headpad headpad"
-      "header header header header header ."
+      "header header header header . ."
       "sidebar sidebar sidebar main main main"
       /*". . footer footer footer footer"*/
       "bonus bonus bonus main main main"
@@ -909,9 +914,11 @@ ul {
 
 .wrapper {
         display: grid;
-    grid-gap: 10px;
-        grid-template-columns: repeat(5, [col] 100px ) ;
+        grid-gap: 10px;
+        grid-template-columns: repeat(4, [col] 100px ) ;
         grid-template-rows: repeat(3, [row] auto  );
+        outline: 1px solid rgb(76, 0, 255);
+        
         /*background-color: #fff;
         color: #444;*/
     }
@@ -922,6 +929,8 @@ ul {
         border-radius: 5px;
         padding: 20px;
         font-size: 150%;
+        outline: 1px solid red;
+        
         /*z-index:10;*/
 
     }
@@ -962,47 +971,51 @@ ul {
 */
 
     .az {
-        grid-column: col / span  4 ;
+        grid-column: col / span  3 ;
         grid-row: row / span 3 ;
         /*background-color: rgba(49,121,207, 0.5);*/
         transform: translateZ(0px);
+        outline: 1px solid red;
     }
+    
     .bz {
-        grid-column: col  / span  4 ;
+        grid-column: col  / span  3 ;
+        grid-row: row / span 3 ;
+        /*background-color: rgba(49,121,207, 0.5);*/
+        transform: translateZ(10px);
+        outline: 1px solid red;
+    }
+    .cz {
+        grid-column: col / span 3;
         grid-row: row / span 3 ;
         /*background-color: rgba(49,121,207, 0.5);*/
         transform: translateZ(20px);
-
+        outline: 1px solid red;
     }
-    .cz {
-        grid-column: col / span 4;
+    .dz {
+        grid-column: col  / span  3 ;
         grid-row: row / span 3 ;
         /*background-color: rgba(49,121,207, 0.5);*/
         transform: translateZ(40px);
-    }
-    .dz {
-        grid-column: col  / span  4 ;
-        grid-row: row / span 3 ;
-        /*background-color: rgba(49,121,207, 0.5);*/
-        transform: translateZ(60px);
-        
+        outline: 1px solid red;
     }
 
     .ez {
-        grid-column: col / span  4;
+        grid-column: col / span  3;
         grid-row: row / span 3 ;
         /*background-color: rgba(49,121,207, 0.5);*/
-        transform: translateZ(80px);
+        transform: translateZ(45px);
+        outline: 1px solid red;
     }
 
     .fz {
-        grid-column: col / span 4;
+        grid-column: col / span 3;
         grid-row: row / span 3  ;
         /*background-color: rgba(49,121,207, 0.5);*/
-        transform: translateZ(100px);
-        
+        transform: translateZ(50px);
+        outline: 1px solid red;
+        place-self: center;
         /*z-index: 20;*/
     }
-
 
     

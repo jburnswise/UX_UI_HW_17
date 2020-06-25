@@ -1044,7 +1044,11 @@ ul {
         /*z-index: 20;*/
     }
 
-    
+/*
+    @media all and (max-width: 880px) {
+
+    }
+ */   
 
 
 
@@ -1056,15 +1060,6 @@ ul {
         outline: 1px solid blue;   
     }
 
-    .fz {
-        grid-column: col / span 3;
-        grid-row: row / span 3  ;
-        /*background-color: rgba(49,121,207, 0.5);*/
-        transform: translateZ(50px);
-        outline: 1px solid rgb(0, 255, 21);
-        place-self: center;
-        /*z-index: 20;*/
-    }
 
     /* --- end 600px media query --- */        
     }
